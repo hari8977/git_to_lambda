@@ -1,7 +1,4 @@
 version: 0.2
-env:
-  variables:
-    URI: "/usr/lib/jvm/java-8-openjdk-amd64"
 
 phases:
   install:
@@ -9,6 +6,7 @@ phases:
       python: 3.8
     commands:
       - echo "Installing dependencies..."
+      - export URI="happy"
   build:
     commands:
       - echo "Zipping deployment package..."
